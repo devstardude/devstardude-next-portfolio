@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
+  @apply scroll-smooth dark:bg-[#0F1624] bg-slate-50;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Navbar */
+/* Sidebar */
+.sidebar {
+  @apply bg-white/[0.25] dark:bg-black/[0.25] filter backdrop-blur-sm text-gray-800 dark:text-white;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.logo {
+  font-size: 18px;
+  line-height: 0;
+}
+.bars {
+  width: 30px;
+}
+
+.Red {
+  @apply bg-red-500;
+}
+@media screen and (min-width: 1024px) {
+  .navClose {
+    @apply ml-[5rem];
+  }
+  .navOpen {
+    @apply ml-[15rem];
+  }
+}
