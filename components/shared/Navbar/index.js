@@ -38,7 +38,7 @@ const routes = [
 ];
 const Navbar = (props) => {
   return (
-    <div>
+    <div className="Font-mulish">
       <DesktopNav />
       <div className="block lg:hidden">
         <MobileNav links={routes} />

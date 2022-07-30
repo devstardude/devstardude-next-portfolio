@@ -40,9 +40,8 @@ const routes = [
 ];
 
 const DesktopNav = (props) => {
-  
   const mycontext = useAppContext();
-  const { isOpen, setIsOpen,theme } = mycontext;
+  const { isOpen, setIsOpen, theme } = mycontext;
   const { children } = props;
   const toggle = () => {
     setIsOpen((prev) => !prev);
@@ -81,15 +80,13 @@ const DesktopNav = (props) => {
     },
   };
 
-  useEffect(()=>{
-
-  },[])
+  useEffect(() => {}, []);
   return (
     <>
       <div className="main-container hidden lg:block ">
         <motion.div
           animate={{
-            width: isOpen ? "200px" : "55px",
+            width: isOpen ? "180px" : "45px",
 
             transition: {
               duration: 0.5,
@@ -118,10 +115,27 @@ const DesktopNav = (props) => {
               <FaBars onClick={toggle} />
             </div>
           </div>
-          <div className="flex w-full justify-between px-3 items-center">
-            <p className="dark:text-red-600 text-blue-600">{theme} Mode</p>
-            <DarkModeSwitch />
+          <div className=" min-h-[30px]">
+            <AnimatePresence>
+              {isOpen && (
+                <motion.h1
+                  variants={showAnimation}
+                  initial="hidden"
+                  animate="show"
+                  exit="hidden"
+                  className="text-[16px] whitespace-nowrap"
+                >
+                  <div className="flex w-full justify-between px-3 items-center rounded-full">
+                    <p className="dark:text-gray-50 text-gray-900 capitalize bg-gray-200 dark:bg-gray-800 rounded-full px-3 border-2 border-[#ED0100] ">
+                      {theme} Mode
+                    </p>
+                    <DarkModeSwitch />
+                  </div>
+                </motion.h1>
+              )}
+            </AnimatePresence>
           </div>
+
           <section className="pt-[3rem] px-2">
             <div className="flex flex-col">
               <Scrollspy
@@ -138,9 +152,9 @@ const DesktopNav = (props) => {
                 {routes.map((route) => (
                   <a
                     href={route.path}
-                    className="flex gap-3 py-2  mb-5 px-1 rounded-md"
+                    className="flex gap-3 py-2 mb-5 px-1 rounded-md"
                   >
-                    <div className="text-[30px]">{route.icon}</div>
+                    <div className="text-[25px]">{route.icon}</div>
                     <AnimatePresence>
                       {isOpen && (
                         <motion.h1
@@ -148,7 +162,7 @@ const DesktopNav = (props) => {
                           initial="hidden"
                           animate="show"
                           exit="hidden"
-                          className="text-[20px] whitespace-nowrap"
+                          className="text-[16px] whitespace-nowrap"
                         >
                           {route.name}
                         </motion.h1>

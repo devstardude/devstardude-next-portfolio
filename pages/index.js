@@ -21,7 +21,7 @@ export default function Home() {
       <main
         className={`${
           isOpen ? "navOpen" : "navClose"
-        } transition-all duration-500 h-full`}
+        } transition-all duration-500 h-full prose dark:prose-invert md:prose-xl lg:prose-2xl max-w-none pr-10 pl-1`}
       >
         {components.map((i) => (
           <section key={i} id={`section-${i}`}>

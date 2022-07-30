@@ -1,12 +1,18 @@
-import React from 'react';
-import Heading from './Heading';
-
-const Masthead = (props)=>{
-    return(
+import { motion } from "framer-motion";
+import React from "react";
+import Heading from "./Heading";
+import SocialLinks from "./SocialLinks";
+import {BiChevronsDown} from "react-icons/bi";
+const Masthead = (props) => {
+  return (
     <React.Fragment>
-        <Heading/>
+      <div className="flex justify-end">
+        <SocialLinks />
+      </div>
+      <Heading />
+     
     </React.Fragment>
-);
+  );
 };
 
-export default Masthead ;
+export default Masthead;

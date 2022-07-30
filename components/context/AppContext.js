@@ -4,19 +4,26 @@ const AppContext = createContext();
 
 export function AppWrapper({ children }) {
   const [isOpen, setIsOpen] = useState(true);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const colorTheme = theme === "dark" ? "light" : "dark";
   const setDarkHandler = () => {
-    const root = window.document.documentElement;
-    root.classList.remove(theme);
-    root.classList.add(colorTheme);
     localStorage.setItem("theme", colorTheme);
     setTheme(colorTheme);
   };
   useEffect(() => {
+    const root = window.document.documentElement;
+    root.classList.remove(colorTheme);
+    root.classList.add(theme);
+  }, [theme]);
+
+  useEffect(() => {
     if (window) {
       setTheme(localStorage.theme);
-      console.log("first render", theme);
+    }
+    if (localStorage.getItem("theme") === null) {
+      console.log("no window");
+      setTheme("dark");
+      localStorage.setItem("theme", "dark");
     }
   }, []);
 
