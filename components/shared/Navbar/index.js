@@ -1,7 +1,7 @@
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import {
-  FaBars,
+  FaPen,
   FaUserTie,
   FaLaptopCode,
   FaUserSecret,
@@ -22,16 +22,21 @@ const routes = [
   },
   {
     path: "#section-3",
+    name: "Blogs",
+    icon: <FaPen />,
+  },
+  {
+    path: "#section-4",
     name: "Skills",
     icon: <FaUserSecret />,
   },
   {
-    path: "#section-4",
+    path: "#section-5",
     name: "Achievments",
     icon: <FaTrophy />,
   },
   {
-    path: "#section-5",
+    path: "#section-6",
     name: "Contact me",
     icon: <FaPhoneAlt />,
   },
@@ -39,7 +44,7 @@ const routes = [
 const Navbar = (props) => {
   return (
     <div className="Font-mulish">
-      <DesktopNav />
+      <DesktopNav routes={routes} />
       <div className="block lg:hidden">
         <MobileNav links={routes} />
       </div>

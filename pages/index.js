@@ -3,11 +3,23 @@ import { useState } from "react";
 import Navbar from "../components/shared/Navbar";
 import Masthead from "../components/main/Masthead";
 import { useAppContext } from "../components/context/AppContext";
+import Projects from "../components/main/Projects";
+import Achievments from "../components/main/Achievements";
+import Blogs from "../components/main/Blogs";
+import Skills from "../components/main/Skills";
+import ContactMe from "../components/main/ContactMe";
 
 export default function Home() {
   const mycontext = useAppContext();
   const { isOpen } = mycontext;
-  const components = [<Masthead />];
+  const components = [
+    <Masthead />,
+    <Projects />,
+    <Blogs />,
+    <Skills />,
+    <Achievments />,
+    <ContactMe />,
+  ];
   return (
     <div>
       <Head>
@@ -21,10 +33,10 @@ export default function Home() {
       <main
         className={`${
           isOpen ? "navOpen" : "navClose"
-        } transition-all duration-500 h-full prose dark:prose-invert md:prose-xl lg:prose-2xl max-w-none pr-10 pl-10 lg:pl-1`}
+        } transition-all duration-500 h-full prose prose-stone dark:prose-invert md:prose-xl lg:prose-2xl max-w-none px-5 md:px-10 lg:pl-1 pb-10`}
       >
-        {components.map((i) => (
-          <section key={i} id={`section-${i}`}>
+        {components.map((i, ind) => (
+          <section key={i} id={`section-${ind + 1}`}>
             {i}
           </section>
         ))}

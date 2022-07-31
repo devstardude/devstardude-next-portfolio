@@ -3,7 +3,7 @@ import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 import { useAppContext } from "../../../../context/AppContext";
 
-const DarkModeSwitch = () => {
+const DarkModeSwitch = (props) => {
   const mycontext = useAppContext();
   const { theme, setDarkHandler } = mycontext;
   //   const [theme, setTheme] = useDarkMode();
@@ -21,11 +21,19 @@ const DarkModeSwitch = () => {
     console.log("new mode", theme);
   };
   return (
-    <SwitchButton
-      checked={checked}
-      onClick={DarkModeHandler}
-      inputProps={{ "aria-label": "controlled" }}
-    />
+    <div className="flex w-full justify-end px-3 items-center rounded-full">
+      {props.showMode && (
+        <p className="dark:text-gray-50 text-gray-900 capitalize bg-gray-200 dark:bg-gray-800 rounded-full px-3 border-2 border-[#ED0100] ">
+          {theme} Mode
+        </p>
+      )}
+
+      <SwitchButton
+        checked={checked}
+        onClick={DarkModeHandler}
+        inputProps={{ "aria-label": "controlled" }}
+      />
+    </div>
   );
 };
 

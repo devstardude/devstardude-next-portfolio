@@ -11,33 +11,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import Scrollspy from "react-scrollspy";
 import { useAppContext } from "../../../context/AppContext";
 import DarkModeSwitch from "./DarkModeSwitch";
-const routes = [
-  {
-    path: "#section-1",
-    name: "About",
-    icon: <FaUserTie />,
-  },
-  {
-    path: "#section-2",
-    name: "Projects",
-    icon: <FaLaptopCode />,
-  },
-  {
-    path: "#section-3",
-    name: "Skills",
-    icon: <FaUserSecret />,
-  },
-  {
-    path: "#section-4",
-    name: "Achievments",
-    icon: <FaTrophy />,
-  },
-  {
-    path: "#section-5",
-    name: "Contact me",
-    icon: <FaPhoneAlt />,
-  },
-];
 
 const DesktopNav = (props) => {
   const mycontext = useAppContext();
@@ -86,7 +59,7 @@ const DesktopNav = (props) => {
       <div className="main-container hidden lg:block ">
         <motion.div
           animate={{
-            width: isOpen ? "180px" : "45px",
+            width: isOpen ? "190px" : "50px",
 
             transition: {
               duration: 0.5,
@@ -125,12 +98,7 @@ const DesktopNav = (props) => {
                   exit="hidden"
                   className="text-[16px] whitespace-nowrap"
                 >
-                  <div className="flex w-full justify-between px-3 items-center rounded-full">
-                    <p className="dark:text-gray-50 text-gray-900 capitalize bg-gray-200 dark:bg-gray-800 rounded-full px-3 border-2 border-[#ED0100] ">
-                      {theme} Mode
-                    </p>
-                    <DarkModeSwitch />
-                  </div>
+                  <DarkModeSwitch showMode />
                 </motion.h1>
               )}
             </AnimatePresence>
@@ -145,11 +113,11 @@ const DesktopNav = (props) => {
                   "section-3",
                   "section-4",
                   "section-5",
+                  "section-6",
                 ]}
                 currentClassName="Red"
-                offsetoffset={-500}
               >
-                {routes.map((route) => (
+                {props.routes.map((route) => (
                   <a
                     href={route.path}
                     className="flex gap-3 py-2 mb-5 px-1 rounded-md"

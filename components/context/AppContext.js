@@ -4,7 +4,7 @@ const AppContext = createContext();
 
 export function AppWrapper({ children }) {
   const [isOpen, setIsOpen] = useState(true);
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const colorTheme = theme === "dark" ? "light" : "dark";
   const setDarkHandler = () => {
     localStorage.setItem("theme", colorTheme);
@@ -22,8 +22,8 @@ export function AppWrapper({ children }) {
     }
     if (localStorage.getItem("theme") === null) {
       console.log("no window");
-      setTheme("dark");
-      localStorage.setItem("theme", "dark");
+      setTheme("light");
+      localStorage.setItem("theme", "light");
     }
   }, []);
 

@@ -25,21 +25,12 @@ export default function MobileNav(props) {
   };
 
   const list = (anchor) => (
-    <div className="BgBlue BgPattern w-[20rem] h-full SideNavBg overflow-hidden">
+    <div className="w-[20rem] h-full  overflow-hidden bg-gray-50 dark:bg-gray-800">
       <div className="pt-8 ">
-        <div className="flex justify-center items-center w-full pb-4">
-          <div className="w-[80%] py-1 px-2 bg-white rounded-full">
-            {/* <img className="w-full h-full rounded-full" src={logo} alt="" /> */}
-          </div>
-        </div>
+        <div className="flex justify-center items-center w-full pb-4"></div>
         {props.links.map((i, index) => (
           <div onClick={toggleDrawer(anchor, false)}>
-            <MenuItem
-              // color={colors[index]}
-              title={i.name}
-              link={i.path}
-              icon={i.icon}
-            />
+            <MenuItem title={i.name} link={i.path} icon={i.icon} />
           </div>
         ))}
       </div>
@@ -55,9 +46,8 @@ export default function MobileNav(props) {
             onClick={toggleDrawer(anchor, true)}
           >
             <GiHamburgerMenu
-              
               size={30}
-              className="m-0 p-0 cursor-pointer"
+              className="m-0 p-0 cursor-pointer text-gray-800 dark:text-gray-100"
             />
           </div>
           <SwipeableDrawer
@@ -78,22 +68,22 @@ export default function MobileNav(props) {
 const MenuItem = (props) => {
   return (
     <div className="z-30">
-      <Link href={props.link}>
+      <a href={props.link}>
         <div className="flex justify-center items-center gap-3 hover:scale-105 transition-all px-6 my-4">
           <div
             style={{ borderColor: `${props.color}` }}
-            className="border-2  rounded-full p-3 "
+            className="border-2  rounded-full p-3 text-gray-800 dark:text-gray-50  "
           >
             {props.icon}
           </div>
           <div
             style={{ borderColor: `${props.color}` }}
-            className="flex items-center justify-center text-[22px] border-2 rounded-md w-full text-white"
+            className="flex items-center justify-center text-[22px] border-2 rounded-md w-full text-gray-800 dark:text-gray-50 "
           >
             {props.title}
           </div>
         </div>
-      </Link>
+      </a>
     </div>
   );
 };

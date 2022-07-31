@@ -1,0 +1,6 @@
+.TagBox{
+    @apply border-2 rounded-full px-4 border-solid gap-2 cursor-pointer;
+}
+.TagBoxActive{
+    @apply border-green-500 bg-green-300/10;
+}

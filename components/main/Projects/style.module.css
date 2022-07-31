@@ -1,0 +1,3 @@
+.ProjectBox{
+    @apply border-2 border-solid rounded-md min-h-[80vh] px-4 md:px-6;
+}

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,8 +9,8 @@ body {
   margin: 0;
   font-family: "Mulish", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
-  @apply scroll-smooth dark:bg-[#0F1624] bg-slate-50 h-full transition-colors;
+  -webkit-tap-highlight-color: transparent;
+  @apply scroll-smooth dark:bg-[#0F1624] bg-slate-50  transition-colors;
 }
 
 a {
@@ -41,11 +41,11 @@ a {
 }
 .bars {
   width: 20px;
-  @apply text-[20px]
+  @apply text-[20px];
 }
 
 .Red {
-  @apply bg-red-500;
+  @apply bg-[#43aaf4f2] dark:bg-[#ed0000b3] font-bold;
 }
 @media screen and (min-width: 1024px) {
   .navClose {
@@ -63,12 +63,13 @@ a {
 .Font-mulish {
   font-family: "Mulish", sans-serif;
 }
-.Font-pop {
-  font-family: "Kaushan Script", sans-serif;
-}
-.DarkRed{
+
+.DarkRed {
   @apply text-[#ED0100];
 }
-.Center{
+.DarkBlue {
+  @apply text-[#43AAF4];
+}
+.Center {
   @apply flex justify-center items-center;
 }
