@@ -51,11 +51,11 @@ export default function MobileNav(props) {
       {["left"].map((anchor) => (
         <div key={anchor}>
           <div
-            className="z-30 fixed top-4 left-5 BgBlue BgPattern p-3 rounded-full "
+            className="z-30 fixed top-8 left-5 BgBlue BgPattern p-3 rounded-full "
             onClick={toggleDrawer(anchor, true)}
           >
             <GiHamburgerMenu
-              color="white"
+              
               size={30}
               className="m-0 p-0 cursor-pointer"
             />

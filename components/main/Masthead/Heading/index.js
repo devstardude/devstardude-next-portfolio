@@ -44,7 +44,7 @@ const Heading = (props) => {
         </div>
       </div>
 
-      <div className="Center pt-4">
+      <div className="Center pt-14 md:pt-4  text-[15px] sm:text-[18px] md:text-[24px]">
         {theme === "light" ? (
           <div className="Center">
             <h2>Building features in the Day Light</h2> &nbsp;&nbsp;
