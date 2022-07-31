@@ -7,41 +7,40 @@ import { GiMoonBats, GiSundial } from "react-icons/gi";
 import { RiSunFill } from "react-icons/ri";
 import { useAppContext } from "../../../context/AppContext";
 import { BiChevronsDown } from "react-icons/bi";
+import Lottie from "lottie-react";
+import lottieOne from "../../../assets/lottieOne.json";
+import lottieTwo from "../../../assets/lottieTwo.json";
+import lottieOne2 from "../../../assets/lottieOne-2.json";
 
+import styles from "./style.module.css";
+import { style } from "@mui/system";
 const Heading = (props) => {
   const mycontext = useAppContext();
   const { theme } = mycontext;
+
   return (
-    <div className="Font-exp not-prose h-[80vh] flex flex-col justify-center">
-      <p className="pl-2 text-[30px]">
+    <div className={`${styles.MainContainer} Font-exp not-prose`}>
+      <p className={styles.IntroTextOne}>
         Hello. I'm <span className="DarkRed">Arun</span>.
       </p>
-      <p className="font-bold text-[80px]">
+      <p className={styles.IntroTextTwo}>
         Developer
         <span className="DarkRed">&nbsp;/&nbsp;</span>
         Programmer
       </p>
-      <div className="flex pointer-events-none justify-around">
-        <div>
-          <iframe src="https://embed.lottiefiles.com/animation/98561"></iframe>
+      <div className={styles.LottieImageContainer}>
+        <div className={`${styles.LottieContainer} mt-3 md:mt-0`}>
+          <Lottie animationData={lottieOne2} loop={true} />
         </div>
-        {theme === "light" ? (
-          <Image
-            src={Man}
-            alt="Picture of the author"
-            width={170}
-            height={170}
-          />
-        ) : (
-          <Image
-            src={Vamp}
-            alt="Picture of the author"
-            width={170}
-            height={170}
-          />
-        )}
-        <div>
-          <iframe src="https://embed.lottiefiles.com/animation/61918"></iframe>
+        <div className={styles.ImageContainer}>
+          {theme === "light" ? (
+            <Image src={Man} alt="man" width={170} height={170} />
+          ) : (
+            <Image src={Vamp} alt="Vamp" width={170} height={170} />
+          )}
+        </div>
+        <div className={styles.LottieContainer}>
+          <Lottie animationData={lottieTwo} loop={true} />
         </div>
       </div>
 

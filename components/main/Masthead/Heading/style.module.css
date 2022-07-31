@@ -1,0 +1,19 @@
+.MainContainer {
+  @apply h-[80vh] flex flex-col justify-center ;
+}
+.IntroTextOne {
+  @apply pl-2 text-[20px] mb-5 mt-3 sm:text-[25px] md:text-[30px] md:mt-0 md:mb-0;
+}
+.IntroTextTwo {
+  @apply font-bold text-[50px] sm:text-[45px] md:text-[58px] lg:text-[60px] xl:text-[80px] 2xl:text-[90px] transition-all flex flex-wrap leading-snug sm:leading-normal mb-5;
+}
+.LottieImageContainer {
+  @apply flex pointer-events-none justify-around items-center ;
+}
+.LottieContainer {
+  @apply w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[180px] lg:h-[180px];
+}
+
+.ImageContainer{
+    @apply w-[110px] h-[110px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px];
+}
