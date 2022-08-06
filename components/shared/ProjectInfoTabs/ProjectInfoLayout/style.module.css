@@ -1,0 +1,66 @@
+.ProjectLayoutVideoContainer {
+  @apply rounded-[10px] w-full py-5;
+}
+.ProjectLayoutyoutube {
+  @apply rounded-[10px] h-[40vh] w-full;
+  @apply h-[35vh] md:h-[40vh];
+}
+.ScrollableDiv {
+  @apply h-[60vh] w-full overflow-x-auto;
+  @apply mt-4 px-0 md:px-0;
+}
+
+.ProjectLayoutButtonWrapper {
+  @apply flex flex-col md:flex-row justify-around items-center gap-4 md:gap-0;
+}
+.ProjectLayoutButton {
+  @apply flex justify-center items-center transition-all duration-300 cursor-pointer rounded-md border border-white;
+  @apply py-[8px] md:py-[10px] w-[150px];
+  @apply text-white text-[15px];
+  @apply hover:bg-red-800 hover:bg-opacity-80;
+}
+
+.ProjectInfoTabTitle {
+  font-family: "Mulish", sans-serif;
+  @apply text-white px-5 pt-3 pb-2;
+  @apply text-[16px] md:text-[20px];
+}
+
+.ProjectInfoTabdesc p {
+  font-family: "Mulish", sans-serif;
+  @apply text-white pl-5 leading-[2.5rem];
+}
+
+.ScrollableDiv::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.ScrollableDiv::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.ScrollableDiv::-webkit-scrollbar-thumb {
+  background: #b91c1c;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.ScrollableDiv::-webkit-scrollbar-thumb:hover {
+  background: #950f0f;
+}
+.ScrollableDiv::-webkit-scrollbar-thumb:active {
+  background: #8f1414;
+}
+.ScrollableDiv::-webkit-scrollbar-track {
+  background: #878787;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.ScrollableDiv::-webkit-scrollbar-track:hover {
+  background: #878787;
+}
+.ScrollableDiv::-webkit-scrollbar-track:active {
+  background: #4f5156;
+}
+.ScrollableDiv::-webkit-scrollbar-corner {
+  background: transparent;
+}

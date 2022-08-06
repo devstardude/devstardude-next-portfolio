@@ -1,9 +1,12 @@
 import styles from "./style.module.css";
-import { FaRegKiss } from "react-icons/fa";
 import Tag from "./Tag";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import ProjectList from "./ProjectList";
+import ProjectItem from "./ProjectItem";
+
 const Projects = (props) => {
   const [filters, setFilters] = useState([]);
+  const [list, setList] = useState(ProjectList);
   const addFilterHandler = (tag) => {
     setFilters((prev) => {
       if (prev.includes(tag)) {
@@ -13,6 +16,26 @@ const Projects = (props) => {
       }
     });
   };
+  useEffect(() => {
+    if (filters.length === 0) {
+      setList(ProjectList);
+    } else {
+      setList([]);
+      let filtered = [];
+      filters.forEach((filter) => {
+        ProjectList.forEach((item) => {
+          if (item.tech.includes(filter)) {
+            filtered.push(item);
+          }
+        });
+      });
+      filtered = filtered.filter(
+        (value, index, self) =>
+          index === self.findIndex((t) => t.name === value.name)
+      );
+      setList(filtered);
+    }
+  }, [filters]);
   return (
     <div>
       <h2>Projects</h2>
@@ -31,11 +54,17 @@ const Projects = (props) => {
             <Tag label={tag} onClick={() => addFilterHandler(tag)} />
           ))}
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-[2rem] gap-10">
+          {list.map((i) => (
+            <ProjectItem item={i} />
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 const availableTags = [
+  "MERN",
   "React",
   "Node",
   "MongoDB",
