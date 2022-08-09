@@ -21,7 +21,7 @@ const DarkModeSwitch = (props) => {
     console.log("new mode", theme);
   };
   return (
-    <div className="flex w-full justify-end px-3 items-center rounded-full">
+    <div className="flex w-full justify-end px-2 items-center rounded-full">
       {props.showMode && (
         <p className="dark:text-gray-50 text-gray-900 capitalize bg-gray-200 dark:bg-gray-800 rounded-full px-3 border-2 border-[#ED0100] ">
           {theme} Mode

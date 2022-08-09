@@ -29,7 +29,7 @@ export default function MobileNav(props) {
       <div className="pt-8 ">
         <div className="flex justify-center items-center w-full pb-4"></div>
         {props.links.map((i, index) => (
-          <div onClick={toggleDrawer(anchor, false)}>
+          <div key={index} onClick={toggleDrawer(anchor, false)}>
             <MenuItem title={i.name} link={i.path} icon={i.icon} />
           </div>
         ))}

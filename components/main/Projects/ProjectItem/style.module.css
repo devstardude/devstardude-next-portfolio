@@ -1,9 +1,0 @@
-.MainContainer{
-  @apply bg-slate-400 m-0 p-0
-}
-.Title{
-  @apply text-[20px]
-}
-.Desc{
-  @apply text-[14px]
-}

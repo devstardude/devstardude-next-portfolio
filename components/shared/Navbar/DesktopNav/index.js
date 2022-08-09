@@ -117,8 +117,9 @@ const DesktopNav = (props) => {
                 ]}
                 currentClassName="Red"
               >
-                {props.routes.map((route) => (
+                {props.routes.map((route, i) => (
                   <a
+                    key={i}
                     href={route.path}
                     className="flex gap-3 py-2 mb-5 px-1 rounded-md"
                   >

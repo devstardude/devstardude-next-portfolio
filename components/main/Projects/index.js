@@ -49,14 +49,17 @@ const Projects = (props) => {
         <p className="flex text-lg items-center">
           You can select tags to filter the stack 🏷️
         </p>
-        <div className="flex flex-wrap gap-3 md:gap-6">
+        <div className="flex flex-wrap gap-3 md:gap-6 p-2 md:p-4 bg-slate-100 dark:bg-[#090d17] rounded-lg">
+          <span className=" underline underline-offset-[10px] font-semibold">
+            Tags:
+          </span>
           {availableTags.map((tag) => (
             <Tag label={tag} onClick={() => addFilterHandler(tag)} />
           ))}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-[2rem] gap-10">
-          {list.map((i) => (
-            <ProjectItem item={i} />
+          {list.map((i, ind) => (
+            <ProjectItem key={ind} item={i} />
           ))}
         </div>
       </div>
