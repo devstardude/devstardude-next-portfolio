@@ -28,14 +28,14 @@ const Heading = (props) => {
         Programmer
       </p>
       <div className={styles.LottieImageContainer}>
-        <div className={`${styles.LottieContainer} mt-3 md:mt-0`}>
+        <div className={`${styles.LottieContainer} mt-3 md:mt-3`}>
           <Lottie animationData={lottieOne} loop={true} />
         </div>
         <div className={styles.ImageContainer}>
           {theme === "light" ? (
-            <Image src={Man} alt="man" width={170} height={170} />
+            <Image src={Man} alt="man" />
           ) : (
-            <Image src={Vamp} alt="Vamp" width={170} height={170} />
+            <Image src={Vamp} alt="Vamp" />
           )}
         </div>
         <div className={styles.LottieContainer}>
