@@ -8,9 +8,8 @@ import { RiSunFill } from "react-icons/ri";
 import { useAppContext } from "../../../context/AppContext";
 import { BiChevronsDown } from "react-icons/bi";
 import Lottie from "lottie-react";
-import lottieOne from "../../../assets/lottieOne.json";
 import lottieTwo from "../../../assets/lottieTwo.json";
-import lottieOne2 from "../../../assets/lottieOne-2.json";
+import lottieOne from "../../../assets/lottieOne.json";
 
 import styles from "./style.module.css";
 import { style } from "@mui/system";
@@ -30,7 +29,7 @@ const Heading = (props) => {
       </p>
       <div className={styles.LottieImageContainer}>
         <div className={`${styles.LottieContainer} mt-3 md:mt-0`}>
-          <Lottie animationData={lottieOne2} loop={true} />
+          <Lottie animationData={lottieOne} loop={true} />
         </div>
         <div className={styles.ImageContainer}>
           {theme === "light" ? (

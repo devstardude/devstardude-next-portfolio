@@ -5,7 +5,7 @@
   @apply pl-2 text-[20px] mb-5 mt-3 sm:text-[25px] md:text-[30px] md:mt-0 md:mb-0;
 }
 .IntroTextTwo {
-  @apply font-bold text-[50px] sm:text-[45px] md:text-[58px] lg:text-[60px] xl:text-[80px] 2xl:text-[90px]  flex flex-wrap leading-snug sm:leading-relaxed mb-5 transition-all duration-200 ;
+  @apply font-bold text-[50px] sm:text-[45px] md:text-[58px] lg:text-[60px] xl:text-[80px] 2xl:text-[90px]  flex flex-wrap leading-snug sm:leading-relaxed mb-5  ;
 }
 .LottieImageContainer {
   @apply flex pointer-events-none justify-around items-center pt-6;

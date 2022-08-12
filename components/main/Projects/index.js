@@ -45,11 +45,11 @@ const Projects = (props) => {
           (Click on project to know more)
         </span>
       </p>
-      <div className={`${styles.ProjectBox}`}>
+      <div className={`${styles.ProjectBox} bg-slate-200 dark:bg-slate-800`}>
         <p className="flex text-lg items-center">
           You can select tags to filter the stack 🏷️
         </p>
-        <div className="flex flex-wrap gap-3 md:gap-6 p-2 md:p-4 bg-slate-100 dark:bg-[#090d17] rounded-lg">
+        <div className="flex flex-wrap gap-3 md:gap-6 p-3 md:p-5 bg-slate-50 dark:bg-gray-900 dark:border-gray-900 rounded-lg">
           <span className=" underline underline-offset-[10px] font-semibold">
             Tags:
           </span>

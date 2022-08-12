@@ -1,7 +1,7 @@
 
 const BlogCard = (props) => {
   return (
-    <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 not-prose relative cursor-pointer">
+    <div className="max-w-sm bg-slate-50 rounded-lg border border-gray-200 shadow-md dark:bg-gray-900 dark:border-gray-900 not-prose relative cursor-pointer">
       <div className="ribbon">
         <span>{props.item.ribbon}</span>
       </div>

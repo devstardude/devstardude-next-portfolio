@@ -1,0 +1,5 @@
+
+.TechTechboxGrid {
+  @apply p-2 grid grid-cols-3 gap-10 justify-items-stretch;
+  @apply grid grid-cols-2 md:grid-cols-3;
+}

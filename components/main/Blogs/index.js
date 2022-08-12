@@ -16,8 +16,8 @@ const Blogs = (props) => {
     <div>
       <h2>Blogs</h2>
       <p>Here are some of my Tech blogs.</p>
-      <div className={`${styles.ProjectBox}`}>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-[2rem] gap-10">
+      <div className={`${styles.ProjectBox} bg-slate-200 dark:bg-slate-800`}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-[2rem] gap-10  ">
           {blogs.map((i) => (
             <BlogCard item={i} />
           ))}

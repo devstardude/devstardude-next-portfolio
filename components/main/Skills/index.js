@@ -1,8 +1,14 @@
+import Technologies from "./Technologies"
 const Skills = (props) => {
   return (
     <div>
       <h2>Skills</h2>
-      <div className="h-screen"></div>
+      <p>
+        I&apos;ve worked with a wide range a technologies in the programming world.
+        Be it Full Stack web application, Designing, Project management or Bot
+        creation.
+      </p>
+      <Technologies />
     </div>
   );
 };
