@@ -8,7 +8,7 @@
   @apply font-bold text-[50px] sm:text-[45px] md:text-[58px] lg:text-[60px] xl:text-[80px] 2xl:text-[90px]  flex flex-wrap leading-snug sm:leading-relaxed mb-5;
 }
 .LottieImageContainer {
-  @apply flex pointer-events-none justify-around items-center ;
+  @apply flex pointer-events-none justify-around items-center pt-6 md:pt-0  ;
 }
 .LottieContainer {
   @apply w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[180px] lg:h-[180px];
