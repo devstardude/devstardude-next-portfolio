@@ -1,0 +1,11 @@
+.FooterMainWrapper {
+  @apply pt-[3rem] md:pt-[1rem];
+}
+
+
+
+
+.FooterBottomText {
+  @apply pt-[2rem] pb-[1rem] flex justify-center items-center;
+  @apply text-[15px] sm:text-[18px] md:text-[20px];
+}

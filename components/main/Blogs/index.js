@@ -5,11 +5,13 @@ import styles from "./style.module.css";
 const Blogs = (props) => {
   const [blogs, setBlogs] = useState([
     {
-      name: "Blog 1",
-      description: "Hello mf",
+      name: "How to deploy React app on remote Linux server using NGINX in Linode",
+      description:
+        "Linode products, services, and people enable developers and businesses to build, deploy, and scale applications more easily and cost-effectively in the cloud.",
       image:
-        "https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        ribbon:"Hashnode"
+        "https://res.cloudinary.com/practicaldev/image/fetch/s--aWdeRRJz--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0ueeu67ratzne0es3t3d.png",
+      ribbon: "dev.to",
+      link: "https://dev.to/devstardude/how-to-deploy-react-app-on-remote-linux-server-using-nginx-in-linode-3iid",
     },
   ]);
   return (

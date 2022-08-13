@@ -1,7 +1,6 @@
-
 const BlogCard = (props) => {
   return (
-    <div className="max-w-sm bg-slate-50 rounded-lg border border-gray-200 shadow-md dark:bg-gray-900 dark:border-gray-900 not-prose relative cursor-pointer">
+    <div className="max-w-sm bg-slate-50 rounded-lg border border-gray-200 shadow-md dark:bg-gray-900 dark:border-gray-900 not-prose relative">
       <div className="ribbon">
         <span>{props.item.ribbon}</span>
       </div>
@@ -13,7 +12,11 @@ const BlogCard = (props) => {
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-[14px]">
           {props.item.description}
         </p>
-        <buttton className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-red-800 rounded-lg hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-red-600 dark:bg-red-800 dark:hover:bg-red-900 dark:focus:ring-red-900">
+        <a
+          target="_blank"
+          href={props.item.link}
+          className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-red-800 rounded-lg hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-red-600 dark:bg-red-800 dark:hover:bg-red-900 dark:focus:ring-red-900"
+        >
           Read more
           <svg
             aria-hidden="true"
@@ -28,7 +31,7 @@ const BlogCard = (props) => {
               clip-rule="evenodd"
             ></path>
           </svg>
-        </buttton>
+        </a>
       </div>
       {props.item.highlight && (
         <div className="ribbon3">
