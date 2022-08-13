@@ -2,8 +2,9 @@
   @apply pt-[3rem] md:pt-[1rem];
 }
 
-
-
+.FooterMainText {
+  border-radius: 1.2em 0.4em 1.2em 0.4em;
+}
 
 .FooterBottomText {
   @apply pt-[2rem] pb-[1rem] flex justify-center items-center;

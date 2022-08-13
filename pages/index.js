@@ -36,7 +36,11 @@ export default function Home() {
         } transition-all duration-500 h-full prose prose-stone dark:prose-invert md:prose-xl lg:prose-2xl max-w-none px-5 md:px-10 lg:pl-1 pb-10`}
       >
         {components.map((i, ind) => (
-          <section key={i} id={`section-${ind + 1}`}>
+          <section
+            style={{ paddingTop: `${i == 0 ? "0px" : "10px"}` }}
+            key={i}
+            id={`section-${ind + 1}`}
+          >
             {i}
           </section>
         ))}
