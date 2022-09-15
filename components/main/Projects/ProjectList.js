@@ -128,7 +128,7 @@ const projects = [
     highlight: true,
     tech: ["Next.js", "TypeScript", "Alchemy", "TailwindCSS", "Thirdweb"],
     image: `https://i.ibb.co/sj5vQzZ/Screenshot-2022-09-14-011254.png`,
-    projectLink: "nft-collection-learnweb.vercel.app/",
+    projectLink: "https://nft-collection-learnweb.vercel.app/",
     githubLink: "https://github.com/devstardude/Nft-collection",
     youtubeLink: "https://www.youtube.com/embed/JjRruxXGRTM",
     features: (
