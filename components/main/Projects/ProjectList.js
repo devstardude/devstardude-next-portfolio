@@ -62,7 +62,15 @@ const projects = [
       "Track places you have visited, or wishlist (And get Badges). Socialize with other users by Liking their shared places and posts. Many more real world features included.",
     ribbon: "mern",
     highlight: true,
-    tech: ["MERN","React", "Node", "MongoDB", "Firebase", "Bootstrap", "Material-UI"],
+    tech: [
+      "MERN",
+      "React",
+      "Node",
+      "MongoDB",
+      "Firebase",
+      "Bootstrap",
+      "Material-UI",
+    ],
     image: `https://i.ibb.co/VJVhjj1/visite-display-pic-1.png`,
     projectLink: "https://visite-place-tracker.web.app/",
     githubLink: "https://github.com/devstardude/Visite-place-tracker",
@@ -108,6 +116,58 @@ const projects = [
           ⚙ Deployment
           <br />
           &emsp; • Frontend on Firebase and Backend on Heroku <br />
+        </p>
+      </div>
+    ),
+  },
+  {
+    name: "NFT Collection",
+    description:
+      "A Next.js with TypeScript Dapp to fetch user's NFT and collection's NFTs from multiple collections.",
+    ribbon: "Next.js+TS",
+    highlight: true,
+    tech: ["Next.js", "TypeScript", "Alchemy", "TailwindCSS", "Thirdweb"],
+    image: `https://i.ibb.co/sj5vQzZ/Screenshot-2022-09-14-011254.png`,
+    projectLink: "nft-collection-learnweb.vercel.app/",
+    githubLink: "https://github.com/devstardude/Nft-collection",
+    youtubeLink: "https://www.youtube.com/embed/JjRruxXGRTM",
+    features: (
+      <div>
+        <p>
+          🤍 Fetch NFTs owned by the user from multiple NFTs collections.
+          <br />
+          🤍 Fetch all NFTs minted in an NFTs collections.
+          <br />
+          🤍 Pagination (Initial limit is 20 NFTs, user can see next 20 NFTs by
+          clicking on show more). <br />
+          🤍 Detect current Network and show a warning when not connected to the
+          mentioned network.
+          <br />
+          🤍 Users can share owned NFTs on Social platforms such as Twitter,
+          LinkedIn, Reddit, and WhatsApp.
+          <br />
+          🤍 Light and Dark mode with responsive website.
+          <br />
+        </p>
+      </div>
+    ),
+    stack: (
+      <div>
+        <p>
+          ⚙ Frontend <br />
+          &emsp; • Next.js with TypeScript
+          <br />
+          &emsp; • TailwindCSS
+          <br />
+          ⚙ Blockchain
+          <br />
+          &emsp; • Alchemy API to fetch NFTs from OpenSea
+          <br />
+          &emsp; • Thirdweb for wallet connection and network detection
+          <br />
+          ⚙ Deployment
+          <br />
+          &emsp; • Deployed on Vercel <br />
         </p>
       </div>
     ),
