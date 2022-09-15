@@ -74,6 +74,8 @@ const availableTags = [
   "Blockchain",
   "Firebase",
   "Redux",
+  "Next.js",
+  "TypeScript"
 ];
 
 export default Projects;
