@@ -173,6 +173,43 @@ const projects = [
     ),
   },
   {
+    name: "Shopping cart",
+    description:
+      "A React, Redux, and TypeScript Project to add and delete items from the cart, also shows realtime overall price.",
+    ribbon: "React",
+    tech: ["React", "Redux", "TypeScript", "Redux-thunk"],
+    image: `https://i.ibb.co/7xcbgkD/image.png`,
+    projectLink: "https://shopping-cart-sable.vercel.app/",
+    githubLink: "https://github.com/devstardude/shopping-cart",
+
+    youtubeLink: "https://www.youtube.com/embed/LrZ9xbln95Y",
+    features: (
+      <div>
+        <p>
+          🤍 Add or Remove Furniture with a click of button <br />
+          🤍 Price calculated automatically <br />
+          🤍 Fetch Data from public external Furniture API <br />
+        </p>
+      </div>
+    ),
+    stack: (
+      <div>
+        <p>
+          ⚙ Frontend <br />
+          &emsp; • React.js,
+          <br />
+          &emsp; • Redux
+          <br />
+          &emsp; • Html, Css, TypeScript
+          <br />
+          ⚙ Deployment
+          <br />
+          &emsp; • Frontend on Vercel <br />
+        </p>
+      </div>
+    ),
+  },
+  {
     name: "Burger Blast",
     description:
       "A React, Redux, and Firebase Project to make delicious burger interactively and submit your order details to the server.",
