@@ -182,7 +182,7 @@ const projects = [
     projectLink: "https://shopping-cart-sable.vercel.app/",
     githubLink: "https://github.com/devstardude/shopping-cart",
 
-    youtubeLink: "https://www.youtube.com/embed/LrZ9xbln95Y",
+    youtubeLink: "null",
     features: (
       <div>
         <p>

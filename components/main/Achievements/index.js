@@ -25,6 +25,10 @@ const AchievmentBox = (props) => {
 };
 const AchievmentsText = [
   <p>
+    Open source contribution to a popular react component library{" "}
+    <span className="DarkBlue">Mantine with 80k+ per month downloads</span>.
+  </p>,
+  <p>
     Secured IPFS, The Graph, and chainlink bounties worth $2000USD in{" "}
     <span className="DarkBlue">ETHernals 2022 Hackathon</span>.
   </p>,
