@@ -53,7 +53,6 @@ const DesktopNav = (props) => {
     },
   };
 
-  useEffect(() => {}, []);
   return (
     <>
       <div className="main-container hidden lg:block ">

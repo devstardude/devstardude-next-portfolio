@@ -10,7 +10,7 @@ const AboutMe = (props) => {
             Full-stack Developer and Programmer
           </span>
           , experienced in a vast range of technologies in Frontend, Backend,
-          Databases, Programming languages, etc.{" "}
+          Databases, Blockchain, Programming languages, etc.{" "}
         </p>
         <p>
           I enjoy solving complex problems and building application that solves

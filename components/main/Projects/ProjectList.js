@@ -1,5 +1,72 @@
 const projects = [
   {
+    name: "Visitereum",
+    description:
+      "Track your visited places on Blockchain with Decentralised identity and so much more...",
+    ribbon: "Blockchain",
+    highlight: true,
+    tech: [
+      "Next.js",
+      "Blockchain",
+      "TypeScript",
+      "IPFS",
+      "Ceramic",
+      "TailwindCSS",
+    ],
+    image: `https://camo.githubusercontent.com/55f05e8f7f912b096e14119e8bcb4b7e7a20a40557b1751a07b8484ad2d61081/68747470733a2f2f692e6962622e636f2f7451664b7142302f696d6167652e706e67`,
+    projectLink: "https://visitereum.vercel.app/",
+    githubLink: "https://github.com/devstardude/visitereum",
+    youtubeLink: "https://www.youtube.com/embed/cGoyAaqmhsw",
+    features: (
+      <div>
+        <p>
+          🤍 Track and store visited places details in Polygon Blockchain.{" "}
+          <br />
+          🤍 Authentication by Ceramic Decentralised Identity, manage your DID
+          profile within the app.
+          <br />
+          🤍 Automatic place search and Map rendering <br />
+          🤍 Earn NFTs based on the types of places you visit, and share them on
+          social platforms such as Twitter, LinkedIn, Reddit, and WhatsApp, or
+          view on OpenSea.
+          <br />
+          🤍 Save data assets in a decentralised way into IPFS
+          <br />
+          🤍 Claim exclusive merchandise with your NFTs. (In development)
+          <br />
+          🤍 Responsive and Fast
+          <br />
+        </p>
+      </div>
+    ),
+    stack: (
+      <div>
+        <p>
+          ⚙ Frontend <br />
+          &emsp; • Next.js with TypeScript
+          <br />
+          &emsp; • Material UI
+          <br /> &emsp; • TailwindCSS
+          <br />
+          ⚙ Blockchain
+          <br />
+          &emsp; • Solidity for writing smart contracts
+          <br />
+          &emsp; • IPFS for decentralized storage
+          <br />
+          &emsp; • Ceramic DID
+          <br />
+          &emsp; • Thirdweb (To Connect wallet, contract, fetch and mint NFTs)
+          <br />
+          ⚙ Deployment
+          <br />
+          &emsp; • Frontend on Vercel and Smart contracts on Polygon Mumbai{" "}
+          <br />
+        </p>
+      </div>
+    ),
+  },
+  {
     name: "Docthereum",
     description:
       "A Web3 decentralized app to maintain anonymous medical reports and aids in seamless healthcare across the globe.",

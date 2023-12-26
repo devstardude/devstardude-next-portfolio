@@ -10,7 +10,7 @@ const ContactMe = (props) => {
         <div className="flex items-center gap-2 ">
           <HiOutlineMail className="" color="#E34134" />
           <a href="mailto:arunshekhar001@gmail.com" className="no-underline">
-            arunshekhar001@gmail
+            arunshekhar001@gmail.com
           </a>
         </div>
         <div>

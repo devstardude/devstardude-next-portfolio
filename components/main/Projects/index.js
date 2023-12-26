@@ -37,7 +37,7 @@ const Projects = (props) => {
     }
   }, [filters]);
   return (
-    <div>
+    <div className="mb-2">
       <h2>Projects</h2>
       <p>
         These are some other Projects I made while Learning.{" "}
@@ -67,6 +67,8 @@ const Projects = (props) => {
   );
 };
 const availableTags = [
+  "Next.js",
+  "TypeScript",
   "MERN",
   "React",
   "Node",
@@ -74,8 +76,6 @@ const availableTags = [
   "Blockchain",
   "Firebase",
   "Redux",
-  "Next.js",
-  "TypeScript"
 ];
 
 export default Projects;

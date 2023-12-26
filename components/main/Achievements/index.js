@@ -25,6 +25,10 @@ const AchievmentBox = (props) => {
 };
 const AchievmentsText = [
   <p>
+    'Moderatore - A Decentralized moderation mechanism' app won
+    <span className="DarkBlue"> Best use of Chainlink function in ETH India 2023</span>.
+  </p>,
+  <p>
     Open source contribution to a popular react component library{" "}
     <span className="DarkBlue">Mantine with 80k+ per month downloads</span>.
   </p>,
