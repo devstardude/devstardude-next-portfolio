@@ -13,7 +13,7 @@ const projects = [
       "Ceramic",
       "TailwindCSS",
     ],
-    image: `https://camo.githubusercontent.com/55f05e8f7f912b096e14119e8bcb4b7e7a20a40557b1751a07b8484ad2d61081/68747470733a2f2f692e6962622e636f2f7451664b7142302f696d6167652e706e67`,
+    image: `https://i.ibb.co/tQfKqB0/image.png`,
     projectLink: "https://visitereum.vercel.app/",
     githubLink: "https://github.com/devstardude/visitereum",
     youtubeLink: "https://www.youtube.com/embed/cGoyAaqmhsw",
