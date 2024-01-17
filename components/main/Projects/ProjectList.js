@@ -139,7 +139,7 @@ const projects = [
       "Material-UI",
     ],
     image: `https://i.ibb.co/VJVhjj1/visite-display-pic-1.png`,
-    projectLink: "https://visite-place-tracker.web.app/",
+    projectLink: "https://visite-place-tracker.vercel.app/",
     githubLink: "https://github.com/devstardude/Visite-place-tracker",
     youtubeLink: "https://www.youtube.com/embed/sncySXQQKFQ",
     features: (
@@ -182,7 +182,7 @@ const projects = [
           <br />
           ⚙ Deployment
           <br />
-          &emsp; • Frontend on Firebase and Backend on Heroku <br />
+          &emsp; • Frontend on Vercel and Backend on Render <br />
         </p>
       </div>
     ),
